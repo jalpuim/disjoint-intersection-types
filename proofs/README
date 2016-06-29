@@ -1,0 +1,11 @@
+This directory contains the Coq proofs presented in the paper. 
+The proofs are split into several files:
+
+- STLC.v (formalization and properties regarding the target language)
+- CoherenceBasicBD.v (formalization and all properties regarding our source language - without pairs and without top)
+- CoherenceBasicBDPairs.v (formalization and all properties regarding our source language - without top)
+- CoherenceSimpleTop.v (formalization and all properties regarding our "naive" source language with top - without pairs)
+- CoherenceTop.v (formalization and all proofs regarding our "extend" source language with top - without pairs)
+
+Please note that STLC.v is a dependency required by the other files. 
+All the developments were tested using Coq 8.5 and can be built using "coqc <filename> -quick". 
